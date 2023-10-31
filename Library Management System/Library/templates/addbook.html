@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADD BOOK</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'add.css' %}">
+
+  </head>
+
+<body>
+ 
+<div class="txt">
+    <b>
+    <center>
+      <h2>Add Book Here:-</h2>
+    </center>
+
+  <form class="con" action="/add/" method="post" >
+    {% csrf_token %}
+
+    <label for="student_name">Student Name</label>
+    <input type="text" id="student_name" name="student_name" placeholder= "Student Name">
+
+    <br><br>
+
+    <label for="enrollment">Enrollment</label>
+    <input type="number" id="enrollment" name="enrollment" placeholder= "Enrollment">
+
+    <br><br>
+     
+    <label for="book_name">Book Name</label>
+    <input type="text" id="book_name" name="book_name" placeholder= "Book Name">
+
+    <br><br>
+
+    <label for="author_name">Author Name</label>
+    <input type="text" id="author_name" name="author_name" placeholder="Author Name">
+
+    <br><br>
+
+    <label for="issued_date">Issued Date</label>
+    <input type="date" id="issued_date" name="issued_date" placeholder="Issued Date">
+
+    
+    <br><br>
+
+    <label for="expiry_date">Expiry Date</label>
+    <input type="date" id="expiry_date" name="expiry_date" placeholder="Expiry Date">
+
+    <br><br>
+
+    <label for="fine">Fine</label>
+    <input type="number" id="fine" name="fine" placeholder="Fine">
+
+    <br><br>
+
+
+    <input type="submit" value="Submit">
+
+  </form>
+</b>
+</div>
+</center>
+
+</body>
+</html>

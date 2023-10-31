@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+  
+
+    <div class="nav">
+      <form class="mt-1" action="/" method="POST">
+        {% csrf_token %}
+        
+        <a class="active" href="#">Home</a>
+        <a href="addbook">AddBook</a>
+        <a href="allbook/">AllBook</a>
+
+       
+      <p class='img'>
+        <img src="/static/media/LMS1.jpg" alt="Book_Image" style="width:1500px;height:600px;">
+      </p>
+    
+    
+    </form> 
+  </div>
+
+</body>
+</html>
